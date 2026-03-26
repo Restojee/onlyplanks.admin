@@ -1,0 +1,12 @@
+.hoverableIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  margin-left: 4px;
+
+  &.visible {
+    opacity: 1;
+  }
+}

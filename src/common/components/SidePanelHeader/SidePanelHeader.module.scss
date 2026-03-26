@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--paletteBorderNormal);
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--typographyFontSizeLg);
+  font-weight: 600;
+  color: var(--paletteTextPrimary);
+}

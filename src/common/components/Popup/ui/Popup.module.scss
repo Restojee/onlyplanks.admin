@@ -1,0 +1,70 @@
+.Popup {
+  position: absolute;
+  gap: 0;
+  flex-direction: column;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  pointer-events: initial;
+  background-color: white;
+  z-index: var(--zIndexPopup);
+  transition: opacity 0.15s ease-in-out;
+}
+
+.PopupContainer {
+  position: absolute;
+  z-index: var(--zIndexPopup);
+  pointer-events: none;
+}
+
+.Header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.Body {
+  padding: 0;
+}
+
+.Footer {
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.Wrapper {
+  position: relative;
+  display: contents;
+}
+
+.sm {
+  .Header_sm {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .Footer_sm {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+.md {
+  .Header_md {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .Footer_md {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,16 @@
+.FormFieldItem {
+
+}
+
+.Control {
+  border-radius: var(--layoutBorderRadiusSm);
+  width: 100%;
+}
+
+.ControlError {
+  box-shadow: 0 0 0 1px var(--paletteBorderError);
+}
+
+.ErrorText {
+  padding-top: calc(var(--layoutSpaceXs) / 2);
+}

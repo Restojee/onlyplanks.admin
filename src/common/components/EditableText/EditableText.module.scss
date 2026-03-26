@@ -1,0 +1,71 @@
+.editingContainer {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  height: 100%;
+  gap: var(--layoutSpaceXs);
+}
+
+.editableInput {
+  min-width: 50px;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  
+  &:empty:before {
+    color: #2e3542;
+    opacity: 0.6;
+  }
+  
+  &:focus {
+    outline: none;
+  }
+  
+  &.sizeSm {
+    font-size: var(--inputSmFontSize);
+  }
+  
+  &.sizeMd {
+    font-size: var(--inputMdFontSize);
+  }
+}
+
+.editableText {
+  display: inline-flex;
+  align-items: center;
+  cursor: text;
+  height: 100%;
+  
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &.disabled {
+    opacity: 0.6;
+  }
+}

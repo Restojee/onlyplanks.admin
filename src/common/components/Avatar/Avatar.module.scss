@@ -1,0 +1,65 @@
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+
+  &.sm {
+    width: 16px;
+    height: 16px;
+  }
+
+  &.md {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.lg {
+    width: 32px;
+    height: 32px;
+  }
+
+  &.hoverable {
+    cursor: pointer;
+  }
+
+  &.clickable {
+    cursor: pointer;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--paletteColorsBrand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.initial {
+  color: var(--paletteColorsWhite);
+  user-select: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}

@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.uploadArea {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  border: 2px dashed var(--paletteBorderNormal);
+  border-radius: var(--borderRadiusMd);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+
+  &:hover:not(.disabled) {
+    border-color: var(--paletteColorsBrand);
+    background-color: var(--paletteColorsLightGray);
+  }
+
+  &.hasPreview {
+    border-style: solid;
+    min-height: auto;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &.error {
+    border-color: var(--paletteColorsRed);
+  }
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--layoutSpaceLg);
+  color: var(--paletteColorsGray);
+  text-align: center;
+  height: 100%;
+
+  p {
+    margin: var(--layoutSpaceXs) 0;
+  }
+
+  .hint {
+    font-size: var(--typographyFontSizeSm);
+    color: var(--paletteColorsLightGray);
+  }
+}
+
+.previewContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &:hover .overlay {
+    opacity: 1;
+  }
+}
+
+.preview {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.errorMessage {
+  margin-top: var(--layoutSpaceXs);
+  color: var(--paletteColorsRed);
+  font-size: var(--typographyFontSizeSm);
+}

@@ -1,0 +1,14 @@
+.editableCell {
+  position: relative;
+}
+
+.cellContent {
+  display: flex;
+  align-items: center;
+  gap: var(--layoutSpaceSm);
+  position: relative;
+}
+
+.editIcon {
+  flex-shrink: 0;
+}

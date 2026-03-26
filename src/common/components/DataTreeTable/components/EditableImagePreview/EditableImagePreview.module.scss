@@ -1,0 +1,17 @@
+.text {
+  flex: 1;
+  min-width: 0;
+}
+
+.placeholder {
+  color: var(--paletteTextSecondary);
+  font-style: italic;
+}
+
+.currentPreview {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: var(--layoutBorderRadiusSm);
+  border: 1px solid var(--paletteBorderNormal);
+}

@@ -1,0 +1,320 @@
+:root {
+  --paletteColorsBlack: #000000;
+  --paletteColorsWhite: #FFFFFF;
+  --paletteColorsGreen: #34C75A;
+  --paletteColorsGreenDark: #238a3e;
+  --paletteColorsRed: #FF3B31;
+  --paletteColorsRedDark: #d32f24;
+  --paletteColorsBlue: #007AFF;
+  --paletteColorsBlueDark: #0056cc;
+  --paletteColorsOrange: #FF9501;
+  --paletteColorsOrangeDark: #e6821e;
+  --paletteColorsYellow: #FFCC01;
+  --paletteColorsYellowDark: #e6b800;
+  --paletteColorsPink: #FF486C;
+  --paletteColorsPinkDark: #e6335a;
+  --paletteColorsTeal: #5AC8FB;
+  --paletteColorsTealDark: #47a3d9;
+  --paletteColorsIndigo: #5856D7;
+  --paletteColorsIndigoDark: #4643b5;
+  --paletteColorsPurple: #AF52DF;
+  --paletteColorsPurpleDark: #8a3fb3;
+  --paletteColorsPrimary: #2B2B2B;
+  --paletteColorsSecondary: #EAEAEA;
+  --paletteColorsTertiary: #FFFFFF;
+  --paletteColorsBrand: #4a67c7;
+  --paletteBackgroundPrimary: #2B2B2B;
+  --paletteBackgroundHover: #2B2B2B;
+  --paletteBackgroundSecondary: #EAEAEA;
+  --paletteBackgroundTertiary: #FFFFFF;
+  --paletteBackgroundStatusInfoDark: #4a67c7;
+  --paletteBackgroundStatusSuccessDark: #4a8c4a;
+  --paletteBackgroundStatusDangerDark: #e6671c;
+  --paletteBackgroundStatusErrorDark: #a73434;
+  --paletteBackgroundColorsIndigoDark: #4643b5;
+  --paletteBackgroundColorsTealDark: #47a3d9;
+  --paletteBackgroundColorsPurpleDark: #8a3fb3;
+  --paletteBackgroundColorsPinkDark: #e6335a;
+  --paletteTextPrimary: #3f4759;
+  --paletteTextNormal: #ffffff;
+  --paletteTextLabel: #3f4759;
+  --paletteTextDescription: #EAEAEA;
+  --paletteTextDisabled: #8a8a8a;
+  --paletteTextError: #FF3B31;
+  --paletteTextLink: #4a67c7;
+  --paletteTextButton: #EAEAEA;
+  --paletteTextOnColor: #FFFFFF;
+  --paletteTextOnColorContrast: #2B2B2B;
+  --paletteTextInverse: #2B2B2B;
+  --paletteIconPrimary: #3f4759;
+  --paletteIconSecondary: #ffffff;
+  --paletteIconHover: #4a67c7;
+  --paletteIconActive: #4a67c7;
+  --paletteIconDisabled: #8a8a8a;
+  --paletteDivider: #EAEAEA;
+  --paletteBorderNormal: #EAEAEA;
+  --paletteBorderHover: #EAEAEA;
+  --paletteBorderActive: #EAEAEA;
+  --paletteBorderFocus: #EAEAEA;
+  --paletteBorderDisabled: #EAEAEA;
+  --paletteBorderError: #FF3B31;
+  --paletteLineNormal: #EAEAEA;
+  --paletteLineHover: #EAEAEA;
+  --paletteLineFocus: #EAEAEA;
+  --paletteStatusSuccess: #70c073;
+  --paletteStatusSuccessDark: #4a8c4a;
+  --paletteStatusDanger: #ff8935;
+  --paletteStatusDangerDark: #e6671c;
+  --paletteStatusInfo: #6b88e9;
+  --paletteStatusInfoDark: #4a67c7;
+  --paletteStatusError: #ce5252;
+  --paletteStatusErrorDark: #a73434;
+  --palettePanelSection: #FFFFFF;
+  --palettePanelCategory: #EAEAEA;
+  --palettePanelBackground: #FFFFFF;
+  --palettePanelTertiary: #FFFFFF;
+  --paletteShadowSm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --paletteShadowMd: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --paletteShadowLg: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --paletteShadowXl: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --paletteShadowHover: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --paletteShadowActive: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --paletteShadowFocused: 0 0 0 3px rgba(0, 122, 255, 0.3);
+  --layoutSpaceXs: 7px;
+  --layoutSpaceSm: 10px;
+  --layoutSpaceMd: 12px;
+  --layoutSpaceLg: 20px;
+  --layoutSpaceXl: 25px;
+  --layoutBorderRadiusSm: 5px;
+  --layoutBorderRadiusMd: 10px;
+  --layoutBorderRadiusLg: 15px;
+  --layoutBorderWidthThin: 1px;
+  --layoutBorderWidthNormal: 2px;
+  --layoutBorderWidthThick: 3px;
+  --layoutBorderStyleSolid: solid;
+  --layoutBorderStyleDashed: dashed;
+  --layoutBorderStyleDotted: dotted;
+  --typographyFontFamily: 'Montserrat', sans-serif;
+  --typographyFontSize: 12px;
+  --typographyLineHeight: 20px;
+  --typographyColor: #6e778c;
+  --typographyFontSizeXs: 8px;
+  --typographyFontSizeSm: 12px;
+  --typographyFontSizeMd: 14px;
+  --typographyFontSizeLg: 16px;
+  --typographyFontSizeXl: 18px;
+  --typographyFontWeightLight: 300;
+  --typographyFontWeightNormal: 400;
+  --typographyFontWeightMedium: 500;
+  --typographyFontWeightSemiBold: 600;
+  --typographyFontWeightBold: 700;
+  --typographyH1FontSize: 32px;
+  --typographyH1LineHeight: 44px;
+  --typographyH1FontWeight: 700;
+  --typographyH2FontSize: 24px;
+  --typographyH2LineHeight: 36px;
+  --typographyH2FontWeight: 700;
+  --typographyH3FontSize: 20px;
+  --typographyH3LineHeight: 32px;
+  --typographyH3FontWeight: 700;
+  --typographyH4FontSize: 18px;
+  --typographyH4LineHeight: 28px;
+  --typographyH4FontWeight: 700;
+  --typographyLabelFontSize: 12px;
+  --typographyLabelLineHeight: 16px;
+  --typographyLabelFontWeight: 400;
+  --typographyTextNormalFontSize: 14px;
+  --typographyTextNormalLineHeight: 20px;
+  --typographyTextNormalFontWeight: 400;
+  --typographyTextBoldFontSize: 14px;
+  --typographyTextBoldLineHeight: 20px;
+  --typographyTextBoldFontWeight: 700;
+  --inputSmFontSize: 12px;
+  --inputSmBorderRadius: 5px;
+  --inputSmPadding: 4px 8px;
+  --inputMdFontSize: 14px;
+  --inputMdPadding: 4px 8px;
+  --inputMdBorderRadius: 5px;
+  --inputLgBorderRadius: 7px;
+  --inputLgPadding: 8px 16px;
+  --inputLgFontSize: 16px;
+  --buttonSmBorderRadius: 3px;
+  --buttonSmFontSize: 12px;
+  --buttonSmPadding: 4px 8px;
+  --buttonSmGap: 4px;
+  --buttonMdBorderRadius: 5px;
+  --buttonMdFontSize: 14px;
+  --buttonMdPadding: 6px 12px;
+  --buttonMdGap: 6px;
+  --buttonLgBorderRadius: 7px;
+  --buttonLgFontSize: 16px;
+  --buttonLgPadding: 8px 16px;
+  --buttonLgGap: 8px;
+  --buttonBorderRadiusSm: 3px;
+  --buttonBorderRadiusMd: 5px;
+  --buttonBorderRadiusLg: 7px;
+  --formSmPadding: 8px 12px;
+  --formSmGap: 8px;
+  --formSmLabelFontSize: 11px;
+  --formSmItemGap: 6px;
+  --formMdPadding: 12px 16px;
+  --formMdGap: 12px;
+  --formMdLabelFontSize: 12px;
+  --formMdItemGap: 8px;
+  --cardSmBorderRadius: 7px;
+  --cardMdBorderRadius: 9px;
+  --cardLgBorderRadius: 12px;
+  --shadowSm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadowMd: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --shadowLg: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadowXl: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadowHover: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadowActive: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadowFocused: 0 0 0 3px rgba(0, 122, 255, 0.3);
+  --shadowNavigation: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --listSmFontSize: 12px;
+  --listMdFontSize: 14px;
+  --tableBackgroundDefault: #ffffff;
+  --tableBackgroundAlternate: #f3f4f5;
+  --tableBackgroundHeader: #fafafa;
+  --tableBackgroundHover: #ebedef;
+  --tableBackgroundSelected: #ebedef;
+  --tableBackgroundSelectedHover: #ebedef;
+  --tableBackgroundExpanded: #ebedef;
+  --tableBackgroundExpandedHover: #ebedef;
+  --tableTextHeader: #6e678c;
+  --tableTextCell: #3f4759;
+  --tableBorderHeader: #e0e3e7;
+  --tableBorderColumn: #e0e3e7;
+  --tableResizerColor: #2196f3;
+  --tableResizerOpacityHover: 0.3;
+  --tableResizerOpacityActive: 0.5;
+  --tableToolbarBackground: #ffffff;
+  --tableToolbarBorder: #e0e3e7;
+  --tableToolbarIconColor: #6e678c;
+  --tableToolbarIconColorHover: #2196f3;
+  --tableToolbarIconColorDisabled: #c4c4c4;
+  --tableToolbarDividerColor: #e0e3e7;
+  --tableToolbarPadding: 8px 12px;
+  --tableToolbarActiveBackground: #e3f2fd;
+  --tableSmRowHeight: 25px;
+  --tableSmCellPadding: 4px 8px;
+  --tableSmCellFontSize: 14px;
+  --tableSmHeaderFontSize: 12px;
+  --tableSmHeaderFontWeight: 600;
+  --tableMdRowHeight: 40px;
+  --tableMdCellPadding: 8px 12px;
+  --tableMdCellFontSize: 14px;
+  --tableMdHeaderFontSize: 12px;
+  --tableMdHeaderFontWeight: 600;
+  --borderThinNormal: 1px solid #EAEAEA;
+  --borderThinActive: 1px solid #EAEAEA;
+  --borderThinHover: 1px solid #EAEAEA;
+  --borderThinError: 1px solid #FF3B31;
+  --borderThinFocus: 1px solid #EAEAEA;
+  --borderThinDisabled: 1px solid #EAEAEA;
+  --borderThinLight: 1px solid rgba(255, 255, 255, 0.3);
+  --borderThinLightHover: 1px solid rgba(255, 255, 255, 0.6);
+  --borderNormalNormal: 2px solid #EAEAEA;
+  --borderNormalActive: 2px solid #EAEAEA;
+  --borderNormalHover: 2px solid #EAEAEA;
+  --borderNormalError: 2px solid #FF3B31;
+  --borderNormalFocus: 2px solid #EAEAEA;
+  --borderNormalDisabled: 2px solid #EAEAEA;
+  --borderNormalLight: 2px solid rgba(255, 255, 255, 0.3);
+  --borderNormalLightHover: 2px solid rgba(255, 255, 255, 0.6);
+  --borderThickNormal: 3px solid #EAEAEA;
+  --borderThickActive: 3px solid #EAEAEA;
+  --borderThickHover: 3px solid #EAEAEA;
+  --borderThickError: 3px solid #FF3B31;
+  --borderThickFocus: 3px solid #EAEAEA;
+  --borderThickDisabled: 3px solid #EAEAEA;
+  --borderThickLight: 3px solid rgba(255, 255, 255, 0.3);
+  --borderThickLightHover: 3px solid rgba(255, 255, 255, 0.6);
+  --borderButtonLight: 1px solid rgba(255, 255, 255, 0.3);
+  --borderButtonLightHover: 1px solid rgba(255, 255, 255, 0.6);
+  --borderBottomThin: 1px solid rgba(0, 0, 0, 0.3);
+  --borderBottomNormal: 2px solid rgba(0, 0, 0, 0.3);
+  --borderBottomThick: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.paletteColorsBlack { color: var(--paletteColorsBlack); }
+.paletteColorsWhite { color: var(--paletteColorsWhite); }
+.paletteColorsGreen { color: var(--paletteColorsGreen); }
+.paletteColorsGreenDark { color: var(--paletteColorsGreenDark); }
+.paletteColorsRed { color: var(--paletteColorsRed); }
+.paletteColorsRedDark { color: var(--paletteColorsRedDark); }
+.paletteColorsBlue { color: var(--paletteColorsBlue); }
+.paletteColorsBlueDark { color: var(--paletteColorsBlueDark); }
+.paletteColorsOrange { color: var(--paletteColorsOrange); }
+.paletteColorsOrangeDark { color: var(--paletteColorsOrangeDark); }
+.paletteColorsYellow { color: var(--paletteColorsYellow); }
+.paletteColorsYellowDark { color: var(--paletteColorsYellowDark); }
+.paletteColorsPink { color: var(--paletteColorsPink); }
+.paletteColorsPinkDark { color: var(--paletteColorsPinkDark); }
+.paletteColorsTeal { color: var(--paletteColorsTeal); }
+.paletteColorsTealDark { color: var(--paletteColorsTealDark); }
+.paletteColorsIndigo { color: var(--paletteColorsIndigo); }
+.paletteColorsIndigoDark { color: var(--paletteColorsIndigoDark); }
+.paletteColorsPurple { color: var(--paletteColorsPurple); }
+.paletteColorsPurpleDark { color: var(--paletteColorsPurpleDark); }
+.paletteColorsPrimary { color: var(--paletteColorsPrimary); }
+.paletteColorsSecondary { color: var(--paletteColorsSecondary); }
+.paletteColorsTertiary { color: var(--paletteColorsTertiary); }
+.paletteColorsBrand { color: var(--paletteColorsBrand); }
+.paletteBackgroundPrimary { background-color: var(--paletteBackgroundPrimary); }
+.paletteBackgroundHover { background-color: var(--paletteBackgroundHover); }
+.paletteBackgroundSecondary { background-color: var(--paletteBackgroundSecondary); }
+.paletteBackgroundTertiary { background-color: var(--paletteBackgroundTertiary); }
+.paletteBackgroundStatusInfoDark { background-color: var(--paletteBackgroundStatusInfoDark); }
+.paletteBackgroundStatusSuccessDark { background-color: var(--paletteBackgroundStatusSuccessDark); }
+.paletteBackgroundStatusDangerDark { background-color: var(--paletteBackgroundStatusDangerDark); }
+.paletteBackgroundStatusErrorDark { background-color: var(--paletteBackgroundStatusErrorDark); }
+.paletteBackgroundColorsIndigoDark { background-color: var(--paletteBackgroundColorsIndigoDark); }
+.paletteBackgroundColorsTealDark { background-color: var(--paletteBackgroundColorsTealDark); }
+.paletteBackgroundColorsPurpleDark { background-color: var(--paletteBackgroundColorsPurpleDark); }
+.paletteBackgroundColorsPinkDark { background-color: var(--paletteBackgroundColorsPinkDark); }
+.paletteTextPrimary { color: var(--paletteTextPrimary); }
+.paletteTextNormal { color: var(--paletteTextNormal); }
+.paletteTextLabel { color: var(--paletteTextLabel); }
+.paletteTextDescription { color: var(--paletteTextDescription); }
+.paletteTextDisabled { color: var(--paletteTextDisabled); }
+.paletteTextError { color: var(--paletteTextError); }
+.paletteTextLink { color: var(--paletteTextLink); }
+.paletteTextButton { color: var(--paletteTextButton); }
+.paletteTextOnColor { color: var(--paletteTextOnColor); }
+.paletteTextOnColorContrast { color: var(--paletteTextOnColorContrast); }
+.paletteTextInverse { color: var(--paletteTextInverse); }
+.paletteIconPrimary { color: var(--paletteIconPrimary); }
+.paletteIconSecondary { color: var(--paletteIconSecondary); }
+.paletteIconHover { color: var(--paletteIconHover); }
+.paletteIconActive { color: var(--paletteIconActive); }
+.paletteIconDisabled { color: var(--paletteIconDisabled); }
+.paletteBorderNormal { color: var(--paletteBorderNormal); }
+.paletteBorderHover { color: var(--paletteBorderHover); }
+.paletteBorderActive { color: var(--paletteBorderActive); }
+.paletteBorderFocus { color: var(--paletteBorderFocus); }
+.paletteBorderDisabled { color: var(--paletteBorderDisabled); }
+.paletteBorderError { color: var(--paletteBorderError); }
+.paletteLineNormal { color: var(--paletteLineNormal); }
+.paletteLineHover { color: var(--paletteLineHover); }
+.paletteLineFocus { color: var(--paletteLineFocus); }
+.paletteStatusSuccess { color: var(--paletteStatusSuccess); }
+.paletteStatusSuccessDark { color: var(--paletteStatusSuccessDark); }
+.paletteStatusDanger { color: var(--paletteStatusDanger); }
+.paletteStatusDangerDark { color: var(--paletteStatusDangerDark); }
+.paletteStatusInfo { color: var(--paletteStatusInfo); }
+.paletteStatusInfoDark { color: var(--paletteStatusInfoDark); }
+.paletteStatusError { color: var(--paletteStatusError); }
+.paletteStatusErrorDark { color: var(--paletteStatusErrorDark); }
+.palettePanelSection { color: var(--palettePanelSection); }
+.palettePanelCategory { color: var(--palettePanelCategory); }
+.palettePanelBackground { color: var(--palettePanelBackground); }
+.palettePanelTertiary { color: var(--palettePanelTertiary); }
+.paletteShadowSm { color: var(--paletteShadowSm); }
+.paletteShadowMd { color: var(--paletteShadowMd); }
+.paletteShadowLg { color: var(--paletteShadowLg); }
+.paletteShadowXl { color: var(--paletteShadowXl); }
+.paletteShadowHover { color: var(--paletteShadowHover); }
+.paletteShadowActive { color: var(--paletteShadowActive); }
+.paletteShadowFocused { color: var(--paletteShadowFocused); }

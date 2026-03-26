@@ -1,0 +1,23 @@
+.Float {
+  box-sizing: border-box;
+  
+   
+  transition: all 0.2s ease;
+  
+   
+  &[style*="position: fixed"],
+  &[style*="position: sticky"] {
+    will-change: transform;
+  }
+  
+   
+  &[style*="position: fixed"] {
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+   
+  &[style*="position: sticky"] {
+    align-self: flex-start;
+  }
+} 

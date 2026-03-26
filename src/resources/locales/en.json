@@ -1,0 +1,22 @@
+{
+  "Navigation.Section.Main": "Main",
+  "Navigation.Section.Control": "Control",
+  "Navigation.Section.Security": "Security",
+  "Navigation.Category.All": "Control levels",
+  "Navigation.Category.Levels": "Levels",
+  "Navigation.Category.Favorites": "Favorites",
+  "Navigation.Category.Completed": "Completed",
+  "Navigation.Category.Commented": "Commented",
+  "Navigation.Category.Notes": "Notes",
+  "Navigation.Category.Tips": "Tips",
+  "Navigation.Category.Users": "Users",
+  "Navigation.Category.Invites": "Invites",
+  "Navigation.Category.UserSessions": "User sessions",
+  "Navigation.Category.UserAuditLogs": "Audit log",
+  "Navigation.Category.Roles": "Roles",
+  "LoginForm.Send": "Send",
+  "LoginForm.Login": "Login",
+  "LoginForm.Password": "Password",
+  "List.EmptyMessage": "Nothing found",
+  "List.SearchPlaceholder": "Search..."
+}

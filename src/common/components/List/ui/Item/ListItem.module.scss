@@ -1,0 +1,62 @@
+.ListItem {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--layoutSpaceXs) / 2);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  width: 100%;
+  
+  border: none;
+  background: transparent;
+  justify-content: space-between;
+
+  &:hover:not(.blocked) {
+    background-color: var(--tableBackgroundHover);
+  }
+
+  &.selected {
+    background-color: var(--tableBackgroundSelected);
+    
+    &:hover {
+      background-color: var(--tableBackgroundSelectedHover);
+    }
+  }
+
+  &.sizeSm {
+    padding: calc(var(--layoutSpaceXs) / 2) calc(var(--layoutSpaceSm) / 2);
+    font-size: var(--listSmFontSize);
+  }
+
+  &.sizeMd {
+    padding: var(--layoutSpaceXs) var(--layoutSpaceSm);
+    font-size: var(--listMdFontSize);
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &.blocked {
+    cursor: default;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}

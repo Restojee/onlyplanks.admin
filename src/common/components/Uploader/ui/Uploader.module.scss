@@ -1,0 +1,23 @@
+.ImageForm {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 35px 15px;
+  height: 110px;
+  text-align: center;
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  background-position: center;
+  cursor: pointer;
+  background-size: cover;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: 0.2s;
+
+  &.isDrag {
+    border: 2px dashed gray;
+  }
+
+  &:hover {
+    border: 2px dashed gray;
+  }
+}

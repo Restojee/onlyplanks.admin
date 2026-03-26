@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: var(--layoutBorderRadiusXs);
+  transition: all 0.2s ease;
+  padding: 0;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  transition: all 0.3s ease;
+}

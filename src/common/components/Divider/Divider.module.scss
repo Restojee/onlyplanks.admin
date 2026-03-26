@@ -1,0 +1,14 @@
+.divider {
+  background-color: var(--tableToolbarDividerColor);
+  flex-shrink: 0;
+}
+
+.divider:not(.horizontal) {
+  width: 1px;
+  align-self: stretch;
+}
+
+.horizontal {
+  width: 100%;
+  height: 0.5px;
+}

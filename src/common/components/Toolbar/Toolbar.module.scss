@@ -1,0 +1,16 @@
+.toolbar {
+  display: flex;
+  background-color: var(--tableToolbarBackground);
+  border-bottom: 1px solid var(--tableToolbarBorder);
+}
+
+.iconButton {
+
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--tableToolbarDividerColor);
+  margin: 0 4px;
+}

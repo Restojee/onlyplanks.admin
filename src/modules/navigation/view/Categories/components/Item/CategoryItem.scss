@@ -1,0 +1,26 @@
+.UiCategoryItem  {
+  display: flex;
+  width: 100%;
+  border-radius: var(--layoutBorderRadiusMd);
+  transition: all 0.2s ease;
+  
+  &:hover:not(.disabled) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  &.Active {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+;
+
+   
+  .UiCenter {
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

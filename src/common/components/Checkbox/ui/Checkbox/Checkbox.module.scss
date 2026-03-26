@@ -1,0 +1,50 @@
+.checkbox {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  accent-color: var(--paletteColorsBrand);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.error {
+    accent-color: var(--paletteColorsRed);
+  }
+
+  &.sizeSm {
+    width: 14px;
+    height: 14px;
+  }
+
+  &.sizeMd {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--layoutSpaceSm);
+  cursor: pointer;
+  user-select: none;
+}
+
+.label {
+  color: var(--typographyColor);
+  font-size: var(--typographyFontSizeLg);
+  line-height: var(--typographyLineHeight);
+}
+
+.errorText {
+  color: var(--paletteColorsRed);
+  font-size: var(--typographyFontSizeSm);
+  margin-left: var(--layoutSpaceXs);
+}

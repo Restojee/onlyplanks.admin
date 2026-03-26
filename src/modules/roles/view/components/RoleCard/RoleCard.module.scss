@@ -1,0 +1,47 @@
+.card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  background-color: var(--palettePanelBackground);
+  border-radius: var(--layoutBorderRadiusMd);
+  overflow: hidden;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  &.selected {
+    background-color: var(--paletteColorsBrandLight);
+    box-shadow: 0 0 0 2px var(--paletteColorsBrand);
+  }
+}
+
+.header {
+  flex: 1;
+}
+
+.title {
+  color: var(--palette-text-primary, #1a202c);
+}
+
+.badge {
+  padding: 4px 12px;
+  background-color: var(--palette-primary-main, #6366f1);
+  border-radius: 12px;
+  
+  * {
+    color: white !important;
+  }
+}
+
+.stats {
+  padding: 12px;
+  background-color: var(--palette-background-default, #fafafa);
+  border-radius: 8px;
+}
+
+.actions {
+  padding-top: 8px;
+  border-top: 1px solid var(--palette-line-primary, #e0e0e0);
+}

@@ -1,0 +1,2 @@
+
+export { RoleContent } from '../index';

@@ -1,0 +1,59 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s ease;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.menuTitle {
+  padding: var(--layoutSpaceXs);
+  border-bottom: 1px solid var(--paletteBorderNormal);
+}
+
+.titleText {
+  font-weight: 600;
+  color: var(--paletteTextSecondary);
+}
+
+.itemWrapper {
+  position: relative;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: var(--layoutSpaceSm);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  background-color: transparent;
+
+  &.sm {
+    padding: calc(var(--layoutSpaceXs)/2) var(--layoutSpaceSm);
+  }
+
+  &.md {
+    padding: calc(var(--layoutSpaceSm)/2) var(--layoutSpaceMd);
+  }
+
+  &:hover {
+    background-color: var(--tableBackgroundHover);
+  }
+
+  &.active {
+    background-color: var(--tableBackgroundSelected);
+  }
+}
+
+.itemLabel {
+  flex: 1;
+  color: var(--paletteTextNormal);
+}

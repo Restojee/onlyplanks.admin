@@ -1,0 +1,72 @@
+.UiGrid {
+  display: grid;
+  
+  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+  
+  &.autoFit {
+    grid-template-columns: repeat(auto-fit, minmax(var(--gridMinColumnWidth, 300px), 1fr));
+  }
+  
+  
+  &.width100 { width: 100%; }
+  
+  
+  &.gapXs { 
+    gap: var(--layoutSpaceXs); 
+    row-gap: var(--layoutSpaceXs);
+  }
+  &.gapSm { 
+    gap: var(--layoutSpaceSm); 
+    row-gap: var(--layoutSpaceSm);
+  }
+  &.gapMd { 
+    gap: var(--layoutSpaceMd); 
+    row-gap: var(--layoutSpaceMd);
+  }
+  &.gapLg { 
+    gap: var(--layoutSpaceLg); 
+    row-gap: var(--layoutSpaceLg);
+  }
+  &.gapXl { 
+    gap: var(--layoutSpaceXl); 
+    row-gap: var(--layoutSpaceXl);
+  }
+  
+  
+  &.columnGapXs { column-gap: var(--layoutSpaceXs); }
+  &.columnGapSm { column-gap: var(--layoutSpaceSm); }
+  &.columnGapMd { column-gap: var(--layoutSpaceMd); }
+  &.columnGapLg { column-gap: var(--layoutSpaceLg); }
+  &.columnGapXl { column-gap: var(--layoutSpaceXl); }
+  
+  
+  &.rowGapXs { row-gap: var(--layoutSpaceXs); }
+  &.rowGapSm { row-gap: var(--layoutSpaceSm); }
+  &.rowGapMd { row-gap: var(--layoutSpaceMd); }
+  &.rowGapLg { row-gap: var(--layoutSpaceLg); }
+  &.rowGapXl { row-gap: var(--layoutSpaceXl); }
+  
+  
+  &.minColumnWidth120 { --gridMinColumnWidth: 120px; }
+  &.minColumnWidth200 { --gridMinColumnWidth: 200px; }
+  &.minColumnWidth250 { --gridMinColumnWidth: 250px; }
+  &.minColumnWidth300 { --gridMinColumnWidth: 300px; }
+  &.minColumnWidth400 { --gridMinColumnWidth: 400px; }
+  
+  
+  &.columns1 { grid-template-columns: repeat(1, 1fr); }
+  &.columns2 { grid-template-columns: repeat(2, 1fr); }
+  &.columns3 { grid-template-columns: repeat(3, 1fr); }
+  &.columns4 { grid-template-columns: repeat(4, 1fr); }
+  &.columns5 { grid-template-columns: repeat(5, 1fr); }
+  &.columns6 { grid-template-columns: repeat(6, 1fr); }
+  
+  
+  &.rows1 { grid-template-rows: repeat(1, 1fr); }
+  &.rows2 { grid-template-rows: repeat(2, 1fr); }
+  &.rows3 { grid-template-rows: repeat(3, 1fr); }
+  &.rows4 { grid-template-rows: repeat(4, 1fr); }
+  &.rows5 { grid-template-rows: repeat(5, 1fr); }
+} 

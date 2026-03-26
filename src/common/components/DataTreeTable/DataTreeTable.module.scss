@@ -1,0 +1,269 @@
+.tableWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+
+  .th,td {
+    overflow: hidden;
+  }
+
+  &.sizeSm {
+    .row {
+      height: var(--tableSmRowHeight);
+    }
+
+    .th {
+      padding: var(--tableSmCellPadding);
+      font-size: var(--tableSmHeaderFontSize);
+      font-weight: var(--tableSmHeaderFontWeight);
+    }
+
+    .td {
+      padding: var(--tableSmCellPadding);
+      font-size: var(--tableSmCellFontSize);
+    }
+
+    .sortToggler {
+      font-size: 12px;
+    }
+
+    .footerText {
+      font-size: var(--tableSmHeaderFontSize);
+    }
+  }
+
+  &.sizeMd {
+    .row {
+      height: var(--tableMdRowHeight);
+    }
+
+    .th {
+      padding: var(--tableMdCellPadding);
+      font-size: var(--tableMdHeaderFontSize);
+      font-weight: var(--tableMdHeaderFontWeight);
+    }
+
+    .td {
+      padding: var(--tableMdCellPadding);
+      font-size: var(--tableMdCellFontSize);
+    }
+
+    .sortToggler {
+      font-size: 14px;
+    }
+
+    .footerText {
+      font-size: var(--tableMdHeaderFontSize);
+    }
+  }
+
+  &.withColumnBorders {
+    th,
+    td {
+      border-right: 1px solid var(--paletteBorderNormal);
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.tableHeader {
+  flex-shrink: 0;
+  background-color: var(--paletteColorsWhite);
+  border-bottom: 1px solid var(--paletteBorderNormal);
+  overflow: hidden;
+}
+
+.tableBodyContainer {
+  flex: 1;
+  overflow-y: auto;
+  position: relative;
+  min-height: 0;
+}
+
+.tableFooter {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--layoutSpaceXs) var(--layoutSpaceSm);
+  background-color: var(--paletteColorsWhite);
+  border-top: 1px solid var(--paletteBorderNormal);
+  min-height: 40px;
+}
+
+.footerLeft,
+.footerRight {
+  display: flex;
+  align-items: center;
+}
+
+.footerText {
+  color: var(--tableTextHeader);
+  font-weight: 500;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--typographyFontFamily);
+  font-size: var(--tableCellFontSize);
+  table-layout: fixed;
+}
+
+.thead {
+  background-color: var(--paletteColorsWhite);
+}
+
+.headerRow {
+  height: var(--tableRowHeight);
+}
+
+.th {
+  padding: var(--tableCellPadding);
+  text-align: left;
+  font-weight: var(--tableHeaderFontWeight);
+  font-size: var(--tableHeaderFontSize);
+  color: var(--tableTextHeader);
+  user-select: none;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  cursor: default;
+
+  &.sortable {
+    cursor: pointer;
+    
+    &:hover {
+      color: var(--paletteColorsBlue);
+    }
+  }
+}
+
+.sortToggler {
+  margin-left: 0;
+}
+
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: transparent;
+  cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+
+  &:hover {
+    background-color: var(--tableResizerColor);
+    opacity: var(--tableResizerOpacityHover);
+  }
+
+  &.isResizing {
+    background-color: var(--tableResizerColor);
+    opacity: var(--tableResizerOpacityActive);
+  }
+}
+
+.tbody {
+  background-color: var(--paletteColorsWhite);
+}
+
+.row {
+  height: var(--tableRowHeight);
+  transition: all 0.1s;
+
+  &:nth-child(even) {
+    background-color: var(--tableBackgroundAlternate);
+  }
+
+  &:nth-child(odd) {
+    background-color: var(--tableBackgroundDefault);
+  }
+
+  &:hover:not(.selected):not(.checked) {
+    filter: brightness(0.96);
+  }
+
+  &.checked {
+    background-color: var(--tableToolbarActiveBackground) !important;
+
+    &:hover {
+      filter: brightness(0.96);
+    }
+  }
+
+  &.selected {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px var(--paletteColorsBrand);
+    position: relative;
+
+    &:hover {
+      filter: brightness(0.98);
+    }
+  }
+
+  &.expanded {
+    border-left: 3px solid var(--paletteColorsBrand);
+  }
+
+  &.clickable {
+    cursor: pointer;
+  }
+}
+
+.td {
+  padding: var(--tableCellPadding);
+  color: var(--tableTextCell);
+  font-size: var(--tableCellFontSize);
+  box-sizing: border-box;
+  border: none;
+
+  &:not(:first-child) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.cellWithIndent {
+  display: flex;
+  align-items: center;
+  gap: var(--layoutSpaceXs);
+}
+
+.indentSpacer {
+  flex-shrink: 0;
+  height: 1px;
+}
+
+.cellContent {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.expandButtonPlaceholder {
+  min-width: 20px;
+  min-height: 20px;
+  flex-shrink: 0;
+}
+
+.emptyState {
+  padding: var(--layoutSpaceXl);
+  text-align: center;
+  color: var(--paletteColorsTertiary);
+  font-size: var(--typographyFontSizeLg);
+}

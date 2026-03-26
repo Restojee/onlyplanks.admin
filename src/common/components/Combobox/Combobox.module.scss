@@ -1,0 +1,23 @@
+.combobox {
+  width: 100%;
+}
+
+.trigger {
+
+}
+
+.comboboxContent {
+  min-width: 200px;
+
+  &.sm {
+    font-size: var(--typographyFontSizeSm);
+  }
+
+  &.md {
+    font-size: var(--typographyFontSizeMd);
+  }
+
+  &.lg {
+    font-size: var(--typographyFontSizeLg);
+  }
+}

@@ -1,0 +1,57 @@
+.header {
+  background: #667eea;
+  border-radius: var(--layoutBorderRadiusMd);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  
+  .title {
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  .description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+  }
+}
+
+.statsRow {
+  background: var(--paletteBackgroundSecondary);
+  border-radius: var(--layoutBorderRadiusMd);
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--paletteLineSecondary);
+}
+
+.statItem {
+  .statLabel {
+    color: var(--paletteTextSecondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+  
+  .statValue {
+    color: var(--paletteTextPrimary);
+    font-weight: 600;
+  }
+  
+  .statValueSecondary {
+    color: var(--paletteTextPrimary);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.permissionsContainer {
+  flex: 1;
+  overflow: auto;
+  background: var(--paletteBackgroundPaper);
+  border-radius: var(--layoutBorderRadiusMd);
+  padding: 16px;
+}
+
+.actions {
+  padding-top: 16px;
+  border-top: 1px solid var(--paletteLineSecondary);
+}

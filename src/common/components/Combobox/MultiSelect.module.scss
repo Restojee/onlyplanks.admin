@@ -1,0 +1,33 @@
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.chipsContainer {
+  padding: var(--layoutSpaceXs);
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--layoutSpaceXs);
+  padding: 2px 8px;
+  background-color: var(--paletteBackgroundBrand);
+  border-radius: 12px;
+  font-size: var(--typographyFontSizeSm);
+  color: var(--paletteTextNormal);
+}
+
+.chipLabel {
+  user-select: none;
+}
+
+.chipRemove {
+  cursor: pointer;
+  display: inline-flex;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+}

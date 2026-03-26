@@ -1,0 +1,36 @@
+.sidebar {
+  background-color: var(--paletteBackgroundTertiary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--paletteBorderNormal);
+}
+
+.content {
+  overflow: hidden;
+}
+
+.examplesSection {
+  margin-bottom: var(--layoutSpaceMd);
+}
+
+.testContent {
+  margin-top: var(--layoutSpaceLg);
+  padding-top: var(--layoutSpaceLg);
+  border-top: 1px solid var(--paletteBorderNormal);
+
+  h3 {
+    margin-bottom: var(--layoutSpaceMd);
+    color: var(--paletteTextPrimary);
+  }
+
+  p {
+    margin-bottom: var(--layoutSpaceSm);
+    color: var(--paletteTextSecondary);
+    line-height: 1.5;
+  }
+}

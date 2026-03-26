@@ -1,0 +1,41 @@
+.textarea {
+  width: 100%;
+  font-family: var(--typographyFontFamily);
+  font-size: var(--typographyFontSizeMd);
+  color: var(--paletteColorsBlack);
+  background-color: var(--paletteColorsWhite);
+  border: 1px solid var(--paletteBorderNormal);
+  border-radius: var(--borderRadiusMd);
+  padding: var(--layoutSpaceSm);
+  resize: vertical;
+  transition: border-color 0.2s ease-in-out;
+
+  &:focus {
+    outline: none;
+    border-color: var(--paletteColorsBrand);
+  }
+
+  &:hover:not(:disabled):not(:focus) {
+    border-color: var(--paletteBorderHover);
+  }
+
+  &.disabled {
+    background-color: var(--paletteColorsLightGray);
+    cursor: not-allowed;
+  }
+
+  &.sizeSm {
+    font-size: var(--typographyFontSizeSm);
+    padding: var(--layoutSpaceXs);
+  }
+
+  &.sizeMd {
+    font-size: var(--typographyFontSizeMd);
+    padding: var(--layoutSpaceSm);
+  }
+
+  &.sizeLg {
+    font-size: var(--typographyFontSizeLg);
+    padding: var(--layoutSpaceMd);
+  }
+}

@@ -1,0 +1,47 @@
+.headerRow {
+  background-color: var(--palette-background-default, #fafafa);
+  border-radius: 4px;
+  display: grid;
+  gap: var(--gap-md, 16px);
+}
+
+.row {
+  border: 1px solid var(--palette-line-primary, #e0e0e0);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--palette-background-default, #fafafa);
+  }
+}
+
+.gridRow {
+  display: grid;
+  align-items: center;
+  border: 1px solid var(--palette-line-primary, #e0e0e0);
+  border-radius: 4px;
+  padding: var(--pa-md, 16px);
+  transition: background-color 0.2s;
+  width: 100%;
+
+  &:hover {
+    background-color: var(--palette-background-default, #fafafa);
+  }
+
+  .gridCell {
+    display: flex;
+    align-items: center;
+
+    &.justifyStart {
+      justify-content: start;
+    }
+
+    &.justifyEnd {
+      justify-content: end;
+    }
+
+    &.justifyCenter {
+      justify-content: center;
+    }
+  }
+}

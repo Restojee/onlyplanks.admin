@@ -1,0 +1,24 @@
+.ContextMenu {
+
+  padding: calc(var(--layoutSpaceXs) / 2) 0;
+
+  .sizeSm {
+    padding: calc(var(--layoutSpaceXs) / 2) calc(var(--layoutSpaceSm) / 2);
+  }
+
+  .sizeMd {
+    padding: var(--layoutSpaceXs) var(--layoutSpaceSm);
+  }
+
+  .titleText {
+    font-weight: 600;
+  }
+
+  .divider {
+    margin-bottom: calc(var(--layoutSpaceXs) / 2) 0;
+  }
+}
+
+.ContextMenuPopup {
+  z-index: var(--zIndexContextMenu) !important;
+}

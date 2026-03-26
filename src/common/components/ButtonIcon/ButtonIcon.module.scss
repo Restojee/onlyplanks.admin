@@ -1,0 +1,39 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.outlined {
+  border-radius: var(--layoutBorderRadiusXs);
+  transition: all 0.2s ease;
+  color: var(--tableToolbarIconColor);
+  padding: var(--layoutSpaceXs);
+
+  &:hover:not(:disabled):not(.active) {
+    background-color: rgba(33, 150, 243, 0.08);
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0.95);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    color: var(--tableToolbarIconColorDisabled);
+  }
+
+  &.active {
+    background-color: var(--tableToolbarActiveBackground);
+    color: var(--tableToolbarIconColorHover);
+  }
+}

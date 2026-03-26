@@ -1,0 +1,128 @@
+.Wrapper {
+  display: flex;
+  width: 100%;
+  border-radius: var(--layoutBorderRadiusSm);
+  position: relative;
+  border: 1px solid var(--paletteBorderNormal);
+  background-color: var(--paletteBackgroundSecondary);
+  transition: 0.2s;
+  gap: var(--layoutSpaceXs);
+  align-items: center;
+  transition-property: opacity, background-color, border, box-shadow;
+
+  &:focus-within {
+    border-color: var(--paletteBorderHover);
+  }
+
+  &:hover:not(.noHover) {
+    border-color: var(--paletteBorderHover);
+  }
+
+  &.nonIntegration {
+    width: max-content;
+    height: max-content;
+  }
+
+  &.noBorder {
+    border: none;
+  }
+
+  &.noHover:hover {
+    border-color: var(--paletteBorderNormal);
+  }
+
+  &.sizeSm {
+    .TextInput {
+      padding: var(--inputSmPadding);
+      font-size: var(--inputSmFontSize);
+    }
+  }
+
+  &.sizeMd {
+    .TextInput {
+      padding: var(--inputMdPadding);
+      font-size: var(--inputMdFontSize);
+    }
+  }
+
+  &.noPadding {
+    .TextInput {
+      padding: 0;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &.integrated {
+    border: none;
+    background-color: transparent;
+
+    &:focus-within {
+      box-shadow: none;
+    }
+
+    .TextInput {
+      border-radius: 0;
+    }
+
+  }
+}
+
+.TextInput {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  flex-grow: 1;
+  font: inherit;
+  width: 100%;
+  max-width: 100%;
+  color: inherit;
+  border-radius: var(--layoutBorderRadiusSm);
+  padding: var(--layoutSpaceSm) var(--layoutSpaceMd);
+  box-shadow: inherit;
+  text-overflow: ellipsis;
+  font-size: var(--typographyTextNormalFontSize);
+
+  &::placeholder {
+    color: #2e3542;
+  }
+
+  &.cursor {
+    cursor: pointer
+  }
+
+  &[readonly] {
+    cursor: pointer;
+  }
+}
+
+.Prepend,
+.Append {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: min-content;
+}
+
+.Prepend {
+  margin-right: calc(-1 * var(--layoutSpaceSm));
+  margin-left: var(--layoutSpaceSm);
+}
+
+.Append {
+  margin-right: var(--layoutSpaceSm);
+  margin-left: calc(-1 * var(--layoutSpaceSm));
+  cursor: pointer;
+
+  svg {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

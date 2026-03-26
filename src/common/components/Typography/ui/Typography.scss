@@ -1,0 +1,63 @@
+.UiTypography {
+
+  font-family: var(--typographyFontFamily);
+  font-size: var(--typographyFontSizeMd);
+  font-weight: normal;
+  text-decoration: none;
+  &.upperCase {
+    text-transform: uppercase;
+  }
+
+  &.unselectable {
+    user-select: none;
+  }
+
+  &.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: max-content;
+    width: max-content;
+  }
+
+  &.link {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+
+  &.clickable {
+    opacity: 0.5;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .fontSizeXs {
+    font-size: var(--typographyFontSizeXs);
+  }
+
+  &.fontSizeXs { font-size: var(--typographyFontSizeXs); }
+  &.fontSizeSm { font-size: var(--typographyFontSizeSm); }
+  &.fontSizeMd { font-size: var(--typographyFontSizeMd); }
+  &.fontSizeLg { font-size: var(--typographyFontSizeLg); }
+  &.fontSizeXl { font-size: var(--typographyFontSizeXl); }
+  
+  
+  &.fontWeightLight { font-weight: var(--typographyFontWeightLight); }
+  &.fontWeightNormal { font-weight: var(--typographyFontWeightNormal); }
+  &.fontWeightMedium { font-weight: var(--typographyFontWeightMedium); }
+  &.fontWeightSemiBold { font-weight: var(--typographyFontWeightSemiBold); }
+  &.fontWeightBold { font-weight: var(--typographyFontWeightBold); }
+}

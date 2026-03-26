@@ -1,0 +1,51 @@
+.icon {
+  display: inline-block;
+  color: var(--paletteIconPrimary);
+  transition: color 0.2s ease;
+
+  &.sm {
+    width: 14px;
+    height: 14px;
+  }
+
+  &.md {
+    width: 16px;
+    height: 16px;
+  }
+
+  &.lg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.primary {
+    color: var(--paletteIconPrimary);
+  }
+
+  &.secondary {
+    color: var(--paletteIconSecondary);
+  }
+
+  &.inversed {
+    color: var(--paletteIconDisabled);
+  }
+
+  &:hover:not(.disabled):not(.noHover) {
+    color: var(--paletteIconHover);
+  }
+
+  &.active {
+    color: var(--paletteIconActive);
+  }
+
+  &.disabled {
+    color: var(--paletteIconDisabled);
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}

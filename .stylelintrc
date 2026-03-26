@@ -1,0 +1,17 @@
+{
+  "extends": ["stylelint-config-airbnb", "stylelint-config-rational-order", "stylelint-prettier/recommended"],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin",
+    "stylelint-scss",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "declaration-property-value-blacklist": null,
+    "max-nesting-depth": null,
+    "declaration-block-no-duplicate-properties": [true, {
+      "ignoreProperties": ["width", "height"]
+    }]
+  }
+}

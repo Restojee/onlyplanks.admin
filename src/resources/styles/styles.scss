@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: inherit;
+}
+
+ 
+.borderThinNormal { border: var(--borderThinNormal); }
+.borderThinActive { border: var(--borderThinActive); }
+.borderThinHover { border: var(--borderThinHover); }
+.borderThinError { border: var(--borderThinError); }
+.borderThinFocus { border: var(--borderThinFocus); }
+.borderThinDisabled { border: var(--borderThinDisabled); }
+.borderThinLight { border: var(--borderThinLight); }
+.borderThinLightHover { border: var(--borderThinLightHover); }
+
+.borderNormalNormal { border: var(--borderNormalNormal); }
+.borderNormalActive { border: var(--borderNormalActive); }
+.borderNormalHover { border: var(--borderNormalHover); }
+.borderNormalError { border: var(--borderNormalError); }
+.borderNormalFocus { border: var(--borderNormalFocus); }
+.borderNormalDisabled { border: var(--borderNormalDisabled); }
+.borderNormalLight { border: var(--borderNormalLight); }
+.borderNormalLightHover { border: var(--borderNormalLightHover); }
+
+.borderThickNormal { border: var(--borderThickNormal); }
+.borderThickActive { border: var(--borderThickActive); }
+.borderThickHover { border: var(--borderThickHover); }
+.borderThickError { border: var(--borderThickError); }
+.borderThickFocus { border: var(--borderThickFocus); }
+.borderThickDisabled { border: var(--borderThickDisabled); }
+.borderThickLight { border: var(--borderThickLight); }
+.borderThickLightHover { border: var(--borderThickLightHover); }
+
+.borderButtonLight { border: var(--borderButtonLight); }
+.borderButtonLightHover { border: var(--borderButtonLightHover); }
+.borderBottomThin { border-bottom: var(--borderBottomThin); }
+.borderBottomNormal { border-bottom: var(--borderBottomNormal); }
+.borderBottomThick { border-bottom: var(--borderBottomThick); }
+
+ 
+.shadowSm { box-shadow: var(--shadowSm); }
+.shadowMd { box-shadow: var(--shadowMd); }
+.shadowLg { box-shadow: var(--shadowLg); }
+.shadowXl { box-shadow: var(--shadowXl); }
+.shadowHover { box-shadow: var(--shadowHover); }
+.shadowActive { box-shadow: var(--shadowActive); }
+.shadowFocused { box-shadow: var(--shadowFocused); }
+.shadowNavigation { box-shadow: var(--shadowNavigation); }
+
+ 
+.borderRadiusSm { border-radius: var(--layoutBorderRadiusSm); }
+.borderRadiusMd { border-radius: var(--layoutBorderRadiusMd); }
+.borderRadiusLg { border-radius: var(--layoutBorderRadiusLg); } 

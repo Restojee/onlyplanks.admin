@@ -1,0 +1,9 @@
+export const AppServiceInjectKey = 'AppService';
+export const PaginationServiceInjectKey = 'PaginationService';
+export const AsyncPaginationServiceInjectKey = 'AsyncPaginationService';
+export const SortingServiceInjectKey = 'SortingService';
+export const CompletedApiInjectKey = 'CompletedApi';
+export const CompletedDataAccessInjectKey = 'CompletedDataAccess';
+export const CompletedActionsInjectKey = 'CompletedActions';
+export const FavoriteApiInjectKey = 'FavoriteApi';
+export const CommentApiInjectKey = 'CommentApi';

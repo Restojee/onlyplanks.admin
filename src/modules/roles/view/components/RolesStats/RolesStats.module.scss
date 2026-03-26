@@ -1,0 +1,93 @@
+.statCard {
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-radius: var(--layoutBorderRadiusMd);
+  position: relative;
+  overflow: hidden;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    
+    &::before {
+      height: 6px;
+    }
+  }
+  
+  &.primary {
+    background: #667eea;
+    
+    .statValue {
+      color: #ffffff;
+    }
+    
+    .statLabel {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    &::before {
+      background: #ffffff;
+    }
+  }
+  
+  &.success {
+    background: #10b981;
+    
+    .statValue {
+      color: #ffffff;
+    }
+    
+    .statLabel {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    &::before {
+      background: #ffffff;
+    }
+  }
+  
+  &.info {
+    background: #3b82f6;
+    
+    .statValue {
+      color: #ffffff;
+    }
+    
+    .statLabel {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    &::before {
+      background: #ffffff;
+    }
+  }
+  
+  &.warning {
+    background: #d97706;
+    
+    .statValue {
+      color: #ffffff;
+    }
+    
+    .statLabel {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    &::before {
+      background: #ffffff;
+    }
+  }
+}
+
+.statValue {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.statLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,43 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--paletteBackgroundDefault);
+
+  &.sizeSm {
+    font-size: var(--listSmFontSize);
+  }
+
+  &.sizeMd {
+    font-size: var(--listMdFontSize);
+  }
+}
+
+.placeholder {
+  &.sizeSm {
+    padding: calc(var(--layoutSpaceXs) / 2) var(--layoutSpaceSm);
+  }
+
+  &.sizeMd {
+    padding: var(--layoutSpaceXs) var(--layoutSpaceSm);
+  }
+}
+
+.searchWrapper {
+  border-bottom: 1px solid var(--paletteBorderNormal);
+  flex-shrink: 0;
+}
+
+.itemsContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.footer {
+  padding: calc(var(--layoutSpaceXs) / 2) var(--layoutSpaceSm);
+  border-top: 1px solid var(--paletteBorderNormal);
+  font-size: 12px;
+  color: var(--paletteTextSecondary);
+  flex-shrink: 0;
+}
