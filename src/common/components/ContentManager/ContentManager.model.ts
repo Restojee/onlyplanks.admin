@@ -16,12 +16,12 @@ import {
 } from '@/constants';
 import { RowType } from '@common/store/entity/EntityManager';
 
-export interface PaginationResponse {
+export interface PaginationResponse<T = unknown> {
   totalItems: number;
   totalPages: number,
   pageSize: number,
   page: number
-  data: unknown[]
+  data: T[]
 }
 
 export interface ContentManagerContext {

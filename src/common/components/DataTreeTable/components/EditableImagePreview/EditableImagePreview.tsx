@@ -64,7 +64,7 @@ export const EditableImagePreview: React.FC<EditableImagePreviewProps> = ({
       {displayText}
     </Typography>
   );
-  
+
   return (
     <Popup
       isVisible={isPopupOpen}

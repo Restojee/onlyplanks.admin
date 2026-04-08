@@ -87,7 +87,7 @@ export class CommentedDataAccess {
     return this.commentApi.updateAdmin(request);
   }
 
-  public async deleteBulk(request: DeleteCommentBulkRequest): Promise<DeleteCommentBulkResponse> {
+  public async deleteBulk(request: DeleteCommentBulkRequest): Promise<void> {
     return this.commentApi.deleteBulk(request);
   }
 }
