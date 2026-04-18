@@ -35,20 +35,20 @@ export const usePopup = (options: UsePopupOptions) => {
   });
 
   const { popupPositionStyles, isRendered } = usePopupVisibility(
-    isVisible,
-    getPopupPosition,
-    anchorRef,
-    popupRef
+      isVisible,
+      getPopupPosition,
+      anchorRef,
+      popupRef
   );
 
   const checkNestedPopups = useCallback(
-    (target: Node) => {
-      if (popupContext) {
-        return popupContext.isClickInsideAnyPopup(target);
-      }
-      return false;
-    },
-    [popupContext]
+      (target: Node) => {
+        if (popupContext) {
+          return popupContext.isClickInsideAnyPopup(target);
+        }
+        return false;
+      },
+      [popupContext]
   );
 
   useOutsideClick([anchorRef, popupRef], onClose, isVisible, checkNestedPopups);

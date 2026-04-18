@@ -48,8 +48,7 @@ class CompletedApi {
 
   public updateImage(request: UpdateCompletedImageRequest): Promise<UpdateCompletedResponse> {
     return this.http.post({
-      url: CompletedUrls[CompletedEndpoints.UpdateImage],
-      params: { completedId: request.id },
+      url: `${CompletedUrls[CompletedEndpoints.UpdateImage]}?completedId=${request.id}`,
       file: request.image
     });
   }

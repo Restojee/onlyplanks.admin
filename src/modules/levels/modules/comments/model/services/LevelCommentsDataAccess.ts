@@ -20,8 +20,6 @@ export class LevelCommentsDataAccess {
   }
 
   public async delete(levelCommentIds: number[]): Promise<void> {
-    for (const id of levelCommentIds) {
-      await this.commentApi.delete({ levelCommentId: id });
-    }
+    await this.commentApi.deleteBulk({ ids: levelCommentIds });
   }
 }

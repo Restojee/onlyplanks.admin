@@ -5,7 +5,6 @@ export enum CommentEndpoints {
   CreateAdmin = 'CreateAdmin',
   Update = 'Update',
   UpdateAdmin = 'UpdateAdmin',
-  Delete = 'Delete',
   DeleteBulk = 'DeleteBulk',
 }
 
@@ -16,6 +15,5 @@ export const CommentUrls: Record<CommentEndpoints, string> = {
   [CommentEndpoints.CreateAdmin]: 'admin/comments/create-admin',
   [CommentEndpoints.Update]: 'admin/comments/update',
   [CommentEndpoints.UpdateAdmin]: 'admin/comments/update-admin',
-  [CommentEndpoints.Delete]: 'admin/comments/remove',
   [CommentEndpoints.DeleteBulk]: 'admin/comments/delete-bulk',
 };

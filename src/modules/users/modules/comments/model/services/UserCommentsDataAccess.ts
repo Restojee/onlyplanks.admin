@@ -8,7 +8,7 @@ import {
   Comment,
   CreateCommentRequest,
   UpdateCommentRequest,
-  DeleteCommentRequest,
+  DeleteCommentRequest, DeleteCommentBulkRequest,
 } from '@common/api/comments/models';
 
 @injectable()
@@ -32,7 +32,7 @@ export class UserCommentsDataAccess {
     return this.commentApi.update(request);
   }
 
-  public async delete(request: DeleteCommentRequest): Promise<void> {
-    return this.commentApi.delete(request);
+  public async delete(request: DeleteCommentBulkRequest): Promise<void> {
+    return this.commentApi.deleteBulk(request);
   }
 }

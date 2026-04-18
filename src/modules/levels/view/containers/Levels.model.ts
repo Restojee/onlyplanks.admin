@@ -166,7 +166,7 @@ class LevelsModel extends ViewModel<LevelsProps> {
   }
 
   @AsyncAction()
-  public async loadLevels(page: number, pageSize: number, sortField?: string, sortDirection?: SortDirection): Promise<PaginationResponse> {
+  public async loadLevels(page: number, pageSize: number, sortField?: string, sortDirection?: SortDirection): Promise<PaginationResponse<LevelData>> {
     const canSearchByName = this.filterSelectedColumns.includes('name');
     const canSearchByDescription = this.filterSelectedColumns.includes('description');
 
@@ -176,7 +176,7 @@ class LevelsModel extends ViewModel<LevelsProps> {
     const isCreatedByUser = userId && this.filterUserSearchTypes.includes('author') ? true : undefined;
     const isWithComment = userId && this.filterUserSearchTypes.includes('comments') ? true : undefined;
 
-    return await this.actions.loadLevelCollection({
+    const response = await this.actions.loadLevelCollection({
       page: page,
       size: pageSize,
       name: canSearchByName ? this.filterSearchText : '',
@@ -189,6 +189,8 @@ class LevelsModel extends ViewModel<LevelsProps> {
       sortField,
       sortDirection,
     })
+
+    return response;
   }
 
   @Computed()

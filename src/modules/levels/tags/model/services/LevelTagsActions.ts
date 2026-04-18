@@ -47,13 +47,6 @@ export class LevelTagsActions {
       return;
     }
 
-    const userId = this.authService.user.id;
-
-    if (!userId) {
-      Notification.error('Ошибка', 'Не удалось определить пользователя из токена');
-      return;
-    }
-
     if (tagIds.length === 0) {
       Notification.warning('Предупреждение', 'Выберите теги для прикрепления');
       return;
@@ -71,7 +64,7 @@ export class LevelTagsActions {
       await this.levelsApi.tagCreate({
         levelIds: [this.dataAccess.levelId],
         tagIds: tagsToAdd,
-        userId,
+        userId: this.authService.user?.id,
       });
 
       await this.loadLevelTags(this.dataAccess.levelId);

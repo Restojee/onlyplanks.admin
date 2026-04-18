@@ -86,9 +86,7 @@ class UserCommentsModel extends ViewModel<UserCommentsProps> {
     }
 
     try {
-      for (const row of rows) {
-        await this.dataAccess.delete({ levelCommentId: row.data.id });
-      }
+      await this.dataAccess.delete({ ids: rows.map(row => row.id as number) });
       await this.loadComments();
       Notification.success('Успех', 'Комментарии удалены');
     } catch (error) {

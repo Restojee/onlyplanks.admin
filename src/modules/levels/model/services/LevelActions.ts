@@ -67,7 +67,7 @@ class LevelActions {
   }
 
   @AsyncAction()
-  public async loadLevelCollection(request: LevelCollectRequest): Promise<PaginationResponse> {
+  public async getLevelCollection(request: LevelCollectRequest): Promise<PaginationResponse<LevelData>> {
     const response = await this.getLevelApi().collect({
       page: request.page,
       size: request.size,
@@ -82,15 +82,35 @@ class LevelActions {
       sortDirection: request.sortDirection,
     });
     
-    
-    if (request.page === 1) {
-      this.levelDataAccess.setLevels(response.records);
-    } else {
-      this.levelDataAccess.addLevels(response.records);
-    }
-    
     return {
       data: response.records,
+      page: response.page,
+      pageSize: response.pageSize,
+      totalItems: response.totalItems,
+      totalPages: response.totalPages,
+    };
+  }
+
+  @AsyncAction()
+  public async loadLevelCollection(request: LevelCollectRequest): Promise<PaginationResponse<LevelData>> {
+    const response = await this.getLevelCollection({
+      page: request.page,
+      size: request.size,
+      name: request.name,
+      description: request.description,
+      userId: request.userId,
+      isCompleted: request.isCompleted,
+      isFavorite: request.isFavorite,
+      isCreatedByUser: request.isCreatedByUser,
+      isWithComment: request.isWithComment,
+      sortField: request.sortField,
+      sortDirection: request.sortDirection,
+    });
+
+    this.levelDataAccess.setLevels(response.data);
+
+    return {
+      data: response.data,
       page: response.page,
       pageSize: response.pageSize,
       totalItems: response.totalItems,

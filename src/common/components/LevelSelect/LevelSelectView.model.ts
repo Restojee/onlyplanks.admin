@@ -32,11 +32,13 @@ class LevelSelectViewModel extends ViewModel<LevelSelectViewProps> {
   async loadLevels(): Promise<void> {
     try {
       await this.infiniteScroll.loadFirstPage(async (params) => {
-        return await this.levelActions.loadLevelCollection({
+        const response = await this.levelActions.getLevelCollection({
           page: params.page,
           size: params.pageSize,
           name: params.search,
         });
+        this.levelDataAccess.addLevels(response.data);
+        return response;
       });
     } catch (error) {
       console.error('[LevelSelect] Error loading levels:', error);
@@ -48,26 +50,31 @@ class LevelSelectViewModel extends ViewModel<LevelSelectViewProps> {
   public async loadNextPage(): Promise<void> {
     try {
       await this.infiniteScroll.loadNextPage(async (params) => {
-        return await this.levelActions.loadLevelCollection({
+        const response = await this.levelActions.getLevelCollection({
           page: params.page,
           size: params.pageSize,
           name: params.search,
         });
+        this.levelDataAccess.addLevels(response.data);
+        return response;
       });
     } catch (error) {
       console.error('[LevelSelect] Error loading next page:', error);
       }
   }
 
+
   @Action()
   public handleSearchChange(query: string): void {
     this.searchQuery = query;
     this.infiniteScroll.handleSearchChange(query, async (params) => {
-      return await this.levelActions.loadLevelCollection({
+      const response = await this.levelActions.getLevelCollection({
         page: params.page,
         size: params.pageSize,
         name: params.search,
       });
+      this.levelDataAccess.addLevels(response.data);
+      return response;
     });
   }
 

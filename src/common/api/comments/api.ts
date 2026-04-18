@@ -63,14 +63,7 @@ class CommentApi {
       params: request,
     });
   }
-
-  public delete(request: DeleteCommentRequest): Promise<void> {
-    return this.http.delete({
-      url: `${CommentUrls[CommentEndpoints.Delete]}/${request.levelCommentId}`,
-    });
-  }
-
-  public deleteBulk(request: DeleteCommentBulkRequest): Promise<DeleteCommentBulkResponse> {
+  public deleteBulk(request: DeleteCommentBulkRequest): Promise<void> {
     return this.http.post({
       url: CommentUrls[CommentEndpoints.DeleteBulk],
       params: request,
